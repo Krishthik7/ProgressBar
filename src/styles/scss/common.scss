@@ -1,0 +1,41 @@
+@import 'color';
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+.full-screen {
+	height: 100%;
+	margin: 0;
+}
+
+.margin {
+	margin: 8px;
+}
+
+.no-padding-left {
+	padding-left: 0px !important;
+}
+
+.container {
+	height: 100%;
+	padding: 8px;
+	position: relative;
+}
+
+.blue {
+	background-color: $blue-grey;
+}
+
+.yellow {
+	background-color: $yellow-grey;
+}
+
+.green {
+	background-color: $green-grey;
+}
+
+
+
+

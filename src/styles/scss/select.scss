@@ -1,0 +1,22 @@
+@import 'color';
+
+.blue {
+	.select-container {
+		.select {
+			background-color: $light-grey;
+		}
+	}
+}
+.select-container {
+	text-align: left;
+
+	.select {
+		width: 130px;
+		height: 32px;
+		border: 3px outset;
+		border-radius: 3px;
+		padding: 2px;
+		position: relative;
+		margin: 0px 0px 8px 12px;
+	}
+}

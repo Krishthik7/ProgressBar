@@ -1,0 +1,99 @@
+@import 'color';
+
+.blue {
+	.progress {
+		.progress-bar {
+			background-color: $sky;
+		}
+		.over100 {
+			background-color: $orange !important;
+		}
+	}
+	.progress:hover {
+		.progress-bar {
+			background-color: $dark-sky;
+		}
+		.over100 {
+			background-color: $dark-orange !important;
+		}
+	}
+}
+
+.yellow {
+	.progress {
+		.progress-bar {
+			background-color: $yellow;
+		}
+		.over100 {
+			background-color: $orange !important;
+		}
+	}
+	.progress:hover {
+		.progress-bar {
+			background-color: $dark-yellow;
+		}
+		.over100 {
+			background-color: $dark-orange !important;
+		}
+	}
+}
+
+.green {
+	.progress {
+		background-color: $light-grey;
+		.progress-bar {
+			background-color: $green;
+		}
+		.over100 {
+			background-color: $orange !important;
+		}
+	}
+	.progress:hover {
+		.progress-bar {
+			background-color: $dark-green;
+		}
+		.over100 {
+			background-color: $dark-orange !important;
+		}
+	}
+}
+
+.progress {
+	position: relative;
+	width: 91%;
+	height: 25px;
+	background-color: $light-grey;
+	margin: 6px 0px 6px 12px;
+	.progress-bar {
+		position: absolute;
+		color: $black;
+		text-align: center;
+		opacity: 1;
+		//width: 100%;
+		height: 100%;
+	}
+
+	.selectedProgress {
+		border-bottom: 3px outset $light-grey;
+		transition-property: all;
+		transition-duration: .6s;
+		transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+	}
+
+	.percentage {
+		font-size: 12px;
+		padding: 4px;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		height: 100;
+		text-shadow: -1px 0 $light-grey, 0 1px $light-grey, 1px 0 $light-grey, 0 -1px $light-grey;
+	}
+}
+
+.limit {
+	float: left;
+	color: $red;
+	font-size: 12px;
+	margin-left: 12px;
+}

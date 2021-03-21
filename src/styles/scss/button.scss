@@ -1,0 +1,51 @@
+@import 'color';
+
+.blue {
+	.button-container {
+		.button {
+			background-color: $blue;
+		}
+
+		.button:hover {
+			background-color: $dark-blue;
+		}
+	}
+}
+
+.yellow {
+	.button-container {
+		.button {
+			background-color: $yellow;
+		}
+
+		.button:hover {
+			background-color: $dark-yellow;
+		}
+	}
+}
+
+.green {
+	.button-container {
+		.button {
+			background-color: $green;
+		}
+
+		.button:hover {
+			background-color: $dark-green;
+		}
+	}
+}
+
+.button-container {
+	text-align: left;
+	.button {
+		width: 70px;
+		margin: 6px 5px 6px 5px;
+		border-radius: 3px;
+		border: 2px outset;
+		
+		color: $white;
+		-webkit-transition-duration: 0.4s; /* Safari */
+		  transition-duration: 0.4s;
+	}
+}
